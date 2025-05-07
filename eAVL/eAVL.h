@@ -11,10 +11,17 @@
 template<typename T>
 class AVLTree{
 public:
-    AVLTree(): root(nullptr){};
+    AVLTree();
 
+    void insert(const T& x);
+
+    void remove(const T& x);
+
+    void inorder() const;
 private:
     TreeNode<T>* root;
+
+
 };
 
 

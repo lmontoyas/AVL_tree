@@ -12,7 +12,7 @@ struct TreeNode {
     int bal; // -1, 0, +1
     TreeNode *leftNode, *rightNode; //sub arboles
 
-    TreeNode(const T& val);
+    explicit TreeNode(const T& val);
 };
 
 #include "../src/treeNode.tpp"
